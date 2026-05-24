@@ -1,4 +1,4 @@
-# ALU Regex Data Extraction
+ALU Regex Data Extraction
 
 ## What This Program Does
 This program reads messy text files from `input/raw-text.txt` and extracts data
