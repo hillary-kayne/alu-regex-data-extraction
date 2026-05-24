@@ -1,97 +1,113 @@
 {
-  "emails": [
-    {
-      "masked": "j*******@gmail.com",
-      "alu_type": "external",
-      "is_alu": false
+  "summary": {
+    "emails_found": 6,
+    "cards_valid": 0,
+    "cards_invalid": 2,
+    "urls_found": 4,
+    "phones_found": 7,
+    "times_found": 3,
+    "hashtags_found": 3,
+    "currencies_found": 2,
+    "security_flags": 2,
+    "rejected_emails": 0
+  },
+  "extracted": {
+    "emails": [
+      {
+        "masked": "j*******@gmail.com",
+        "alu_type": "external",
+        "is_alu": false
+      },
+      {
+        "masked": "s***********@alumni.alueducation.com",
+        "alu_type": "alumni",
+        "is_alu": true
+      },
+      {
+        "masked": "a****@alueducation.com",
+        "alu_type": "official",
+        "is_alu": true
+      },
+      {
+        "masked": "t**********@si.alueducation.com",
+        "alu_type": "si",
+        "is_alu": true
+      },
+      {
+        "masked": "f***@hacker.com",
+        "alu_type": "external",
+        "is_alu": false
+      },
+      {
+        "masked": "a***********@si.alueducation.com",
+        "alu_type": "si",
+        "is_alu": true
+      }
+    ],
+    "credit_cards": {
+      "valid": [],
+      "invalid": [
+        {
+          "masked": "**** **** **** 4214",
+          "luhn_valid": false,
+          "reason": "Failed Luhn algorithm check \u2014 likely fake or test card"
+        },
+        {
+          "masked": "**** **** **** 9999",
+          "luhn_valid": false,
+          "reason": "Failed Luhn algorithm check \u2014 likely fake or test card"
+        }
+      ]
     },
-    {
-      "masked": "s***********@alumni.alueducation.com",
-      "alu_type": "alumni",
-      "is_alu": true
-    },
-    {
-      "masked": "a****@alueducation.com",
-      "alu_type": "official",
-      "is_alu": true
-    },
-    {
-      "masked": "t**********@si.alueducation.com",
-      "alu_type": "si",
-      "is_alu": true
-    },
-    {
-      "masked": "f***@hacker.com",
-      "alu_type": "external",
-      "is_alu": false
-    },
-    {
-      "masked": "j******@alueducation.com",
-      "alu_type": "official",
-      "is_alu": true
-    },
-    {
-      "masked": "a***********@si.alueducation.com",
-      "alu_type": "si",
-      "is_alu": true
-    }
-  ],
-  "credit_cards": [
-    {
-      "masked": "**** **** **** 4214",
-      "luhn_valid": false,
-      "flagged": true
-    },
-    {
-      "masked": "**** **** **** 9999",
-      "luhn_valid": false,
-      "flagged": true
-    },
-    {
-      "masked": "**** **** **** 1111",
-      "luhn_valid": true,
-      "flagged": false
-    }
-  ],
-  "urls": [
-    "http://acme.com/users/john_doe",
-    "https://support.acme.com/tickets/new",
-    "https://www.alueducation.com/support",
-    "https://si.alueducation.com/portal",
-    "https://portal.alueducation.com/help"
-  ],
-  "phones": [
-    "+250 788 123 456",
-    " 2024-03-15",
-    "+221 77 456 78 90",
-    " 000-000-0000",
-    " 4532 0151 1283",
-    "+44 20 7946 0958",
-    "+1-800-555-0199",
-    " 9999 9999 9999",
-    " 4111 1111 1111",
-    " 1234 5678"
-  ],
-  "times": [
-    "17",
-    "11PM",
-    "2PM",
-    "9AM",
-    "08AM"
-  ],
-  "hashtags": [
-    "#test",
-    "#urgent",
-    "#refund",
-    "#database",
-    "#access",
-    "#billing",
-    "#research"
-  ],
-  "currencies": [
-    "$3,750.00",
-    "$1,250.00",
-    "$500.00",
-    "\u20ac320.50"
-  ]
+    "urls": [
+      "http://acme.com/users/john_doe",
+      "https://portal.alueducation.com/help",
+      "https://si.alueducation.com/portal",
+      "https://support.acme.com/tickets/new"
+    ],
+    "phones": [
+      "2024-03-15",
+      "+1-800-555-0199",
+      "+250 788 123 456",
+      "4532 0151 1283 4214",
+      "+221 77 456 78 90",
+      "000-000-0000",
+      "9999 9999 9999 9999"
+    ],
+    "times": [
+      "9AM",
+      "08AM",
+      "11PM"
+    ],
+    "hashtags": [
+      "#database",
+      "#access",
+      "#research"
+    ],
+    "currencies": [
+      "$3,750.00",
+      "$1,250.00"
+    ]
+  },
+  "security": {
+    "threats_detected": [
+      {
+        "type": "XSS attempt",
+        "content": [
+          "<script>",
+          "</script>",
+          "<a href='https://phishing.site.ru/steal'>",
+          "</a>"
+        ]
+      },
+      {
+        "type": "SQL injection attempt",
+        "content": [
+          "'; DROP TABLE tickets; --\"\nSubmitted via: javascript:void(0)\n\n--- TICKET #1004 ---\nFrom: james.k@alueducation.com\nContact: +44 20 7946 0958\nSubmitted via: https://www.alueducation.com/support\nMessage: \"Billing issue, card ending 4111 1111 1111 1111 was declined at 2:45 PM.\nPlease contact me by 17:00. Budget approved: $500.00 and \u20ac320.50\"\nTags: #billing #urgent #refund\n\n--- TICKET #1005 ---\nFrom: invalid-email@\nContact: not-a-phone\nCard: 1234 5678\nMessage: \"Random malformed data: @@@### \nVisit click here\nAmount: $abc.def, Time: 99:99 AM\"\nTags: #test\n\n--- TICKET #1006 ---"
+        ]
+      }
+    ],
+    "flagged_urls": [],
+    "rejected_emails": []
+  }
 }
