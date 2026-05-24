@@ -1,0 +1,97 @@
+{
+  "emails": [
+    {
+      "masked": "j*******@gmail.com",
+      "alu_type": "external",
+      "is_alu": false
+    },
+    {
+      "masked": "s***********@alumni.alueducation.com",
+      "alu_type": "alumni",
+      "is_alu": true
+    },
+    {
+      "masked": "a****@alueducation.com",
+      "alu_type": "official",
+      "is_alu": true
+    },
+    {
+      "masked": "t**********@si.alueducation.com",
+      "alu_type": "si",
+      "is_alu": true
+    },
+    {
+      "masked": "f***@hacker.com",
+      "alu_type": "external",
+      "is_alu": false
+    },
+    {
+      "masked": "j******@alueducation.com",
+      "alu_type": "official",
+      "is_alu": true
+    },
+    {
+      "masked": "a***********@si.alueducation.com",
+      "alu_type": "si",
+      "is_alu": true
+    }
+  ],
+  "credit_cards": [
+    {
+      "masked": "**** **** **** 4214",
+      "luhn_valid": false,
+      "flagged": true
+    },
+    {
+      "masked": "**** **** **** 9999",
+      "luhn_valid": false,
+      "flagged": true
+    },
+    {
+      "masked": "**** **** **** 1111",
+      "luhn_valid": true,
+      "flagged": false
+    }
+  ],
+  "urls": [
+    "http://acme.com/users/john_doe",
+    "https://support.acme.com/tickets/new",
+    "https://www.alueducation.com/support",
+    "https://si.alueducation.com/portal",
+    "https://portal.alueducation.com/help"
+  ],
+  "phones": [
+    "+250 788 123 456",
+    " 2024-03-15",
+    "+221 77 456 78 90",
+    " 000-000-0000",
+    " 4532 0151 1283",
+    "+44 20 7946 0958",
+    "+1-800-555-0199",
+    " 9999 9999 9999",
+    " 4111 1111 1111",
+    " 1234 5678"
+  ],
+  "times": [
+    "17",
+    "11PM",
+    "2PM",
+    "9AM",
+    "08AM"
+  ],
+  "hashtags": [
+    "#test",
+    "#urgent",
+    "#refund",
+    "#database",
+    "#access",
+    "#billing",
+    "#research"
+  ],
+  "currencies": [
+    "$3,750.00",
+    "$1,250.00",
+    "$500.00",
+    "\u20ac320.50"
+  ]
+}

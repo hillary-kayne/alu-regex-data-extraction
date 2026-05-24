@@ -1,0 +1,52 @@
+=== CUSTOMER SUPPORT TICKET SYSTEM - RAW DATA EXPORT ===
+Date: 2024-03-15 | Batch ID: TKT-2024-MARCH
+
+--- TICKET #1001 ---
+From: john.doe@gmail.com
+Contact: +1-800-555-0199
+Submitted via: https://support.acme.com/tickets/new
+Message: "Hi, I was charged twice on my card 4532 0151 1283 4214. 
+Please refund ASAP. I also tried calling at 9:30 AM but no one answered.
+Check my account at http://acme.com/users/john_doe"
+
+--- TICKET #1002 ---
+From: sarah.mwangi@alumni.alueducation.com
+Contact: +250 788 123 456
+Submitted via: https://portal.alueducation.com/help
+Message: "Hello, my student portal is broken. I need help before 11:59 PM tonight.
+CC this to admin@alueducation.com and techsupport@si.alueducation.com"
+Invoice total: $1,250.00
+
+--- TICKET #1003 ---
+From: <script>alert('xss')</script>fake@hacker.com
+Contact: 000-000-0000
+Card: 9999 9999 9999 9999
+Message: "'; DROP TABLE tickets; --"
+Submitted via: javascript:void(0)
+
+--- TICKET #1004 ---
+From: james.k@alueducation.com
+Contact: +44 20 7946 0958
+Submitted via: https://www.alueducation.com/support
+Message: "Billing issue, card ending 4111 1111 1111 1111 was declined at 2:45 PM.
+Please contact me by 17:00. Budget approved: $500.00 and €320.50"
+Tags: #billing #urgent #refund
+
+--- TICKET #1005 ---
+From: invalid-email@
+Contact: not-a-phone
+Card: 1234 5678
+Message: "Random malformed data: @@@### 
+Visit <a href='https://phishing.site.ru/steal'>click here</a>
+Amount: $abc.def, Time: 99:99 AM"
+Tags: #test
+
+--- TICKET #1006 ---
+From: amara.diallo@si.alueducation.com
+Contact: +221 77 456 78 90
+Submitted via: https://si.alueducation.com/portal
+Message: "Need access to research database. 
+Deadline is 08:00 AM tomorrow. Total grant amount: $3,750.00"
+Tags: #research #access #database
+
+=== END OF EXPORT ===
