@@ -1,6 +1,6 @@
-ALU Regex Data Extraction
+# ALU Regex Data Extraction
 
-## What This Program Does
+# What This Program Does
 This program reads messy text files from `input/raw-text.txt` and extracts data
 using regular expressions. The extracted data is validated and saved to `output/sample-output.json`.
 
